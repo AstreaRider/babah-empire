@@ -13,7 +13,7 @@
             <img src="{{ URL::asset('/images/denah.svg') }}" alt="" width=100% height=100%>
         </div>
         <div class="col-md-6">
-            <form action="/denah/proses" method="post" enctype="multipart/form-data">
+            <form action="{{ url('/denah/proses') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                     <label for="gambar_tipe">Gambar Denah Rumah</label><br>

@@ -33,7 +33,7 @@
                     <textarea type="text" name="deskripsi_proyek" class="form-control @error('deskripsi_proyek') is-invalid @enderror" placeholder="Masukkan Deskripsi Proyek">{{ $proyek->deskripsi_proyek}}</textarea>
                 </div>
                 <div class="form-group">
-                    <label for="alamat_proyek">link video</label><br>
+                    <label for="youtube">link video</label><br>
                     <input type="text" name="youtube" class="form-control @error('youtube') is-invalid @enderror" placeholder="Masukkan link video youtube" value="{{ $proyek->youtube}}">
                 </div>
                 

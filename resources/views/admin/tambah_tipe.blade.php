@@ -13,7 +13,7 @@
                     @endforeach
                 </div>
                 @endif
-                <form action="/proyek/tipe_rumah/tambah_tipe/proses" method="post" enctype="multipart/form-data">
+                <form action="{{ url('/proyek/tipe_rumah/tambah_tipe/proses') }}" method="post" enctype="multipart/form-data">
                 @csrf
                     <div class="form-group">
                         <label for="gambar_tipe">Gambar Tipe Rumah</label><br>

@@ -35,7 +35,7 @@
             @endforeach
         </div>
         @endif
-        <form action="/ktk/proses" method="post" enctype="multipart/form-data" class="bg-light p-5 contact-form">
+        <form action="{{ url('/ktk/proses') }}" method="post" enctype="multipart/form-data" class="bg-light p-5 contact-form">
           @csrf
           <div class="form-group">
               <label for="nama">Nama Lengkap</label><br>

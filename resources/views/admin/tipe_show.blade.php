@@ -9,7 +9,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{$tipe->nama_tipe}}</h5>
                     <p class="card-text" style="text-align:justify">{{$tipe->deskripsi_tipe}}</p>
-                    <form action="/proyek/tipe_rumah/{{$tipe->tipe_id}}" method="post" class="d-inline">
+                    <form action="{{ url('/proyek/tipe_rumah/'.$tipe->tipe_id) }}" method="post" class="d-inline">
                         @method('delete')
                         @csrf
                         <button type="submit" class="btn btn-danger">Hapus Tipe</button>
@@ -21,7 +21,7 @@
             <div class="text-center">
                 <h1>Edit Tipe Rumah</h1><br>
             </div>
-            <form action="{{ url('/proyek/tipe_rumah/'.$tipe->tipe_id)}}" method="post" enctype="multipart/form-data">
+            <form action="{{ url('/proyek/tipe_rumah/'.$tipe->tipe_id) }}" method="post" enctype="multipart/form-data">
             @method('patch')
             @csrf
                 <div class="form-group">
@@ -131,7 +131,7 @@
                 <div class="card my-3" style="width: 18rem; text-align:center;">
                     <img src="{{ url('/data_file/'.$d->file)}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <form action="/denah/{{$d->denah_id}}" method="post" class="d-inline">
+                        <form action="{{ url('/denah/'.$d->denah_id) }}" method="post" class="d-inline">
                             @method('delete')
                             @csrf
                             <button type="submit" class="btn btn-danger">Hapus Denah</button>
@@ -159,7 +159,7 @@
                 <div class="card my-3" style="width: 18rem; text-align:center;">
                     <img src="{{ url('/data_file/'.$pg->file)}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <form action="/progress/{{$pg->progress_id}}" method="post" class="d-inline">
+                        <form action="{{ url('/progress/'.$pg->progress_id) }}" method="post" class="d-inline">
                             @method('delete')
                             @csrf
                             <button type="submit" class="btn btn-danger">Hapus Foto</button>

@@ -19,7 +19,7 @@
                 @endforeach
             </div>
             <div class="text-center">
-                <a href="{{ url('/marketing/tambah_marketing')}}" class="btn btn-primary my-5">Tambah Marketing</a>
+                <a href="{{ url('/marketing/tambah_marketing') }}" class="btn btn-primary my-5">Tambah Marketing</a>
             </div>
         </div>
     </div>

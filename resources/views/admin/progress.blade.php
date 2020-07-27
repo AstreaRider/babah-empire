@@ -13,7 +13,7 @@
             <img src="{{ URL::asset('/images/progress.svg') }}" alt="" width=100% height=100%>
         </div>
         <div class="col-md-6">
-            <form action="/progress/proses" method="post" enctype="multipart/form-data">
+            <form action="{{ url('/progress/proses') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
                     <label for="gambar_tipe">Foto Progress Rumah</label><br>

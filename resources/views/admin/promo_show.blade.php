@@ -9,7 +9,7 @@
                 <div class="card-body" >
                     <h5 class="card-title">{{$promo->nama_promo}}</h5>
                     <p class="card-text" >{{$promo->deskripsi_promo}}</p>
-                    <form action="/promo/{{$promo->id}}" method="post" class="d-inline">
+                    <form action="{{ url('/promo/'.$promo->id ) }}" method="post" class="d-inline">
                         @method('delete')
                         @csrf
                         <button type="submit" class="btn btn-danger">Hapus Promo</button>

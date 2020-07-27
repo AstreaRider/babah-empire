@@ -103,7 +103,7 @@
                         </div>
                     </div>
                 
-                <input type="submit" value="Edit Proyek" class="btn btn-info"> 
+                <input type="submit" value="Edit Tipe Rumah" class="btn btn-info"> 
                 <a href="{{url()->previous()}}" class="btn btn-secondary">Kembali</a>
                 
             </form>

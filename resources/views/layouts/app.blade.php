@@ -61,19 +61,19 @@
                                 <a href="{{ url('/proyek')}}" class="nav-link">Proyek</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ url('proyek/tipe_rumah') }}" class="nav-link">Tipe Rumah</a>
+                                <a href="{{ url('/proyek/tipe_rumah') }}" class="nav-link">Tipe Rumah</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ url('denah') }}" class="nav-link">Denah Rumah</a>
+                                <a href="{{ url('/denah') }}" class="nav-link">Denah Rumah</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ url('progress') }}" class="nav-link">Progress Rumah</a>
+                                <a href="{{ url('/progress') }}" class="nav-link">Progress Rumah</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ url('marketing') }}" class="nav-link">Marketing</a>
+                                <a href="{{ url('/marketing') }}" class="nav-link">Marketing</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ url('pemesanan') }}" class="nav-link">Pemesanan</a>
+                                <a href="{{ url('/pemesanan') }}" class="nav-link">Pemesanan</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

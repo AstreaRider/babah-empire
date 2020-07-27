@@ -4,7 +4,7 @@
 <div class="container my-5">
     <div class="text-center">
         <h1>Proyek {{ $proyek->nama_proyek}}</h1><br>
-        <a href="/proyek/tipe_rumah/tambah_tipe" class="btn btn-primary">Tambah Tipe Rumah</a>
+        <a href="{{ url('/proyek/tipe_rumah/tambah_tipe') }}" class="btn btn-primary">Tambah Tipe Rumah</a>
     </div>
     <div class="row my-5">
         <div class="col-md-4">
@@ -16,8 +16,8 @@
                     <p class="card-text">{{ $proyek->deskripsi_proyek}}</p>
                     <p class="card-text"><small class="text-muted">{{ $proyek->alamat_proyek}}</small></p>
                     <p class="card-text"><small class="text-muted">{{ $proyek->youtube}}</small></p>
-                    <a href="/proyek/{{$proyek->proyek_id}}/edit" class="btn btn-info">Edit Proyek</a>
-                    <form action="/proyek/{{$proyek->proyek_id}}" method="post" class="d-inline">
+                    <a href="{{ url('/proyek/'.$proyek->proyek_id.'/edit' ) }}" class="btn btn-info">Edit Proyek</a>
+                    <form action="{{ url('/proyek/'.$proyek->proyek_id ) }}" method="post" class="d-inline">
                         @method('delete')
                         @csrf
                         <button type="submit" class="btn btn-danger">Hapus Proyek</button>
@@ -39,8 +39,8 @@
                                 <p class="card-text">{{$t->deskripsi_tipe}}</p>
                             </div>
                             <div class="card-footer">
-                            <a href="/proyek/tipe_rumah/{{$t->tipe_id}}/edit"class="btn btn-outline-info ">Edit</a>
-                            <form action="/proyek/tipe_rumah/{{$t->tipe_id}}" method="post"class="d-inline">
+                            <a href="{{ url('/proyek/tipe_rumah/'.$t->tipe_id ) }}"class="btn btn-outline-info ">Edit</a>
+                            <form action="{{ url('/proyek/tipe_rumah/'.$t->tipe_id ) }}" method="post"class="d-inline">
                                 @method('delete')
                                 @csrf
                                 <button class="btn btn-outline-danger">Hapus</button>
