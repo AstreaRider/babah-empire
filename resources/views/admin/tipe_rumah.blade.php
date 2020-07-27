@@ -16,7 +16,7 @@
             <div class="list-group ">
                 @foreach($tipe as $t)
                 <a href="{{ url('/proyek/tipe_rumah/'.$t->tipe_id )}}" class="list-group-item list-group-item-action ">Tipe : {{$t->nama_tipe}} - Proyek : @foreach($proyek as $p)
-                @if($p->proyek_id === $t->proyek_id){{$p->nama_proyek}}@endif @endforeach
+                @if($p->proyek_id == $t->proyek_id){{$p->nama_proyek}}@endif @endforeach
                 </a>
                 @endforeach
             </div>

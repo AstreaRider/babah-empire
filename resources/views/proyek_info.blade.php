@@ -62,7 +62,7 @@
     <div class="container">
         <div class="row justify-content-center">
             @foreach($tipe as $t)
-            @if($proyek->proyek_id === $t->proyek_id)
+            @if($proyek->proyek_id == $t->proyek_id)
             <div class="col-md-4">
                 <div class="property-wrap ftco-animate">
                     <a href="{{ url('/prt/'.$t->tipe_id)}}" class="img" style="background-image: url( {{ url('/data_file/'.$t->file) }} );">

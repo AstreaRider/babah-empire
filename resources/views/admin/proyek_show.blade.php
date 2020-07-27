@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="card-group">
                     @foreach($tipe as $t)
-                    @if($t->proyek_id === $proyek->proyek_id)
+                    @if($t->proyek_id == $proyek->proyek_id)
                     <div class="col-5">
                         <div class="card">
                             <img src="{{ url('/data_file/'.$t->file)}}" class="card-img-top img-fluid img-thumbnail" alt="...">

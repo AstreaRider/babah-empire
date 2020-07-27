@@ -132,7 +132,7 @@
 									</ul>
 									<h3>Tipe {{ $t->nama_tipe }}</h3>
 									@foreach($proyek as $p)
-									@if($p->proyek_id === $t->proyek_id)
+									@if($p->proyek_id == $t->proyek_id)
 									<span class="location">Proyek {{$p->nama_proyek}}</span>
 									@endif
 									@endforeach

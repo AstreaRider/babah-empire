@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 @foreach($denah as $d)
-                @if($tipe->tipe_id === $d->tipe_id)
+                @if($tipe->tipe_id == $d->tipe_id)
                 <div class="card my-3" style="width: 18rem; text-align:center;">
                     <img src="{{ url('/data_file/'.$d->file)}}" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -155,7 +155,7 @@
                     </div>
                 </div>
                 @foreach($progress as $pg)
-                @if($tipe->tipe_id === $pg->tipe_id)
+                @if($tipe->tipe_id == $pg->tipe_id)
                 <div class="card my-3" style="width: 18rem; text-align:center;">
                     <img src="{{ url('/data_file/'.$pg->file)}}" class="card-img-top" alt="...">
                     <div class="card-body">
